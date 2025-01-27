@@ -1,0 +1,10 @@
+@layer base {
+    @font-face {
+        font-family: "Geist";
+        src: url("/fonts/Geist.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Geist Mono";
+        src: url("/fonts/Geist_Mono.ttf") format("truetype");
+    }
+}
