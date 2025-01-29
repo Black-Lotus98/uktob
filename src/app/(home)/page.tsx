@@ -1,27 +1,28 @@
-'use client'
-import CustomH1 from '@/components/ui/CustomH1'
 import React from 'react'
-import { useTranslation } from 'react-i18next'
 import Head from 'next/head';
-import Header from '../../components/Header';
+import Header from '@/components/ui/Header';
+import logo from '../../assets/images/Uktob-Logo.jpg';
+import Image from 'next/image';
+import CustomH1 from '@/components/ui/CustomH1';
+import Link from 'next/link';
+
+export const metadata = {
+  title: "Uktob",
+  description: "",
+};
 
 const HomePage = () => {
-  const { t } = useTranslation()
   return (
     <div className=''>
-      {/* <CustomH1>{t("main")}</CustomH1> */}
-
+      <CustomH1 className='hover:underline'><Link href="/test-page">Click Here Tamer</Link></CustomH1>
       <Head>
         <title>Uktob - Localized Content & Media Monitoring</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
-        />
+
       </Head>
       <Header />
       <main className="container">
         <section>
+
           <h1>Welcome to Uktob!</h1>
           <p>
             Your go-to partner for authentic, localized content and global media
@@ -120,8 +121,10 @@ const HomePage = () => {
           <h2>Our Clients</h2>
           <div className="grid">
             <figure>
-              <img
-                src="/images/client-logo-placeholder.png"
+              <Image
+                src={logo}
+                width={400}
+                height={100}
                 alt="Client Logo"
               />
               <figcaption>Client 1</figcaption>
@@ -147,7 +150,7 @@ const HomePage = () => {
         </small>
       </footer>
     </div>
-    
+
   )
 }
 
