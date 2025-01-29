@@ -1,14 +1,21 @@
+'use client'
 import Image from 'next/image'
 import React from 'react'
 import Placeholder from '../../assets/images/Uktob-Logo.jpg'
+import Logo from '@/components/common/Logo'
+import { useTranslation } from 'react-i18next'
 
 const TestPage = () => {
+
+    const { t } = useTranslation();
+
     return (
         <div>
             <header className="header">
-                <div className="header__logo-box">
-                    <Image width={0} height={100} src={Placeholder} alt="LOGO IMG" className="header__logo" />
-                </div>
+                {/* <div className="header__logo-box">
+                    <Image width={228} height={224} src={ULogo} alt="LOGO IMG" className="header__logo" />
+                </div> */}
+                <Logo />
                 <div className="header__menu-box">
                     <a href="" className="btn-menu">
                         <svg stroke="currentColor" fill="none" strokeWidth="0" height="5rem" width="5rem"
@@ -28,9 +35,9 @@ const TestPage = () => {
                 </div>
                 <div className="header__text-box">
                     <h1 className="heading-primary">
-                        <span className="heading-primary--main">Fannoun</span>
-                        <span className="heading-primary--sub">Navigating the Future</span>
-                        <span className="heading-primary--sub">One Mile at a Time</span>
+                        <span className="heading-primary--main rtl:tracking-normal">{t("uktob")}</span>
+                        {/* <span className="heading-primary--sub">Navigating the Future</span>
+                        <span className="heading-primary--sub">One Mile at a Time</span> */}
                     </h1>
                     <a href="#" className="btn btn--white btn--animated">Learn more</a>
                 </div>
@@ -166,7 +173,7 @@ const TestPage = () => {
                                 <div className="card__side card__side--back card__side--back-1">
                                     <div className="card__cta">
                                         <div className="card__info-box">
-                                            <Image width={0} height={0} src={Placeholder} className="card__logo-Box" 
+                                            <Image width={0} height={0} src={Placeholder} className="card__logo-Box"
                                                 alt="Company Logo" />
                                             <p className="card__price-only">&nbsp;</p>
                                             <p className="card__price-value">&nbsp;</p>
@@ -199,7 +206,7 @@ const TestPage = () => {
                                 </div>
                                 <div className="card__side card__side--back card__side--back-2">
                                     <div className="card__cta">
-                                        <Image width={0} height={0} src={Placeholder} className="card__logo-Box" 
+                                        <Image width={0} height={0} src={Placeholder} className="card__logo-Box"
                                             alt="Company Logo" />
                                         <div className="card__info-box">
                                             <p className="card__price-only">&nbsp;</p>
@@ -234,7 +241,7 @@ const TestPage = () => {
                                 <div className="card__side card__side--back card__side--back-3">
                                     <div className="card__cta">
                                         <div className="card__info-box">
-                                            <Image width={0} height={0}  src={Placeholder} className="card__logo-Box" 
+                                            <Image width={0} height={0} src={Placeholder} className="card__logo-Box"
                                                 alt="Company Logo" />
                                             <p className="card__price-only">&nbsp;</p>
                                             <p className="card__price-value">&nbsp;</p>
@@ -262,7 +269,7 @@ const TestPage = () => {
                     <div className="row">
                         <div className="story">
                             <figure className="story__shape">
-                                <Image width={0} height={0}  src={Placeholder} className="story__img" 
+                                <Image width={0} height={0} src={Placeholder} className="story__img"
                                     alt="founder" />
                                 <figcaption className="story__caption">
                                     Mohammad Yousri Fannoun
@@ -281,7 +288,7 @@ const TestPage = () => {
                     <div className="row">
                         <div className="story">
                             <figure className="story__shape">
-                                <Image width={0} height={0}  src={Placeholder} className="story__img" 
+                                <Image width={0} height={0} src={Placeholder} className="story__img"
                                     alt="founder" />
                             </figure>
                             <div className="story__text">
