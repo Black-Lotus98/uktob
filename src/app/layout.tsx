@@ -1,12 +1,12 @@
 "use client";
-import { useEffect, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import i18n from "@/utilities/i18next";
 import LanguageSwitcher from "@/components/common/LanguageSwitcher";
 import "../style/globals.scss";
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   const [isHydrated, setIsHydrated] = useState(false);
-  const [language, setLanguage] = useState("en"); // Default language must match SSR output
+  const [language, setLanguage] = useState("en"); 
 
   useEffect(() => {
     setIsHydrated(true);

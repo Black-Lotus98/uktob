@@ -16,7 +16,7 @@ const TestPage = () => {
                     <Image width={228} height={224} src={ULogo} alt="LOGO IMG" className="header__logo" />
                 </div> */}
                 <Logo />
-                <div className="header__menu-box">
+                {/* <div className="header__menu-box">
                     <a href="" className="btn-menu">
                         <svg stroke="currentColor" fill="none" strokeWidth="0" height="5rem" width="5rem"
                             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -32,7 +32,7 @@ const TestPage = () => {
                         </svg>
 
                     </a>
-                </div>
+                </div> */}
                 <div className="header__text-box">
                     <h1 className="heading-primary">
                         <span className="heading-primary--main rtl:tracking-normal">{t("uktob")}</span>

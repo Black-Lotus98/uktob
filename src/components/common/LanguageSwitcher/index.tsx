@@ -29,7 +29,7 @@ const LanguageSwitcher = () => {
   return (
     <button
       onClick={toggleLanguage}
-      className="px-4 py-2 text-sm font-medium bg-gray-100 rounded dark:bg-gray-800 dark:text-gray-200"
+      className="px-4 py-2 text-sm font-medium bg-gray-100 rounded"
       suppressHydrationWarning
     >
       {currentLanguage === "en" ? "العربية" : "English"}
