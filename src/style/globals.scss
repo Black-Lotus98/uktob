@@ -11,6 +11,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: Arial, sans-serif;
+  @apply text-[1.5vw] laptopS:text-[.7vw] ;
 }
 
 main.container {

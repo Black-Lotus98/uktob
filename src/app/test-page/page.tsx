@@ -12,9 +12,6 @@ const TestPage = () => {
     return (
         <div>
             <header className="header">
-                {/* <div className="header__logo-box">
-                    <Image width={228} height={224} src={ULogo} alt="LOGO IMG" className="header__logo" />
-                </div> */}
                 <Logo />
                 {/* <div className="header__menu-box">
                     <a href="" className="btn-menu">
@@ -30,47 +27,44 @@ const TestPage = () => {
                                 d="M3 17.0645C2.44772 17.0645 2 17.5122 2 18.0645C2 18.6167 2.44772 19.0645 3 19.0645H21C21.5523 19.0645 22 18.6167 22 18.0645C22 17.5122 21.5523 17.0645 21 17.0645H3Z"
                                 fill="currentColor"></path>
                         </svg>
-
                     </a>
                 </div> */}
                 <div className="header__text-box">
                     <h1 className="heading-primary">
-                        <span className="heading-primary--main rtl:tracking-normal">{t("uktob")}</span>
-                        {/* <span className="heading-primary--sub">Navigating the Future</span>
-                        <span className="heading-primary--sub">One Mile at a Time</span> */}
+                        <span className="heading-primary--main ">{t("uktob")}</span>
+                        <span className="heading-primary--sub ">{t('sub_heading')}</span>
                     </h1>
-                    <a href="#" className="btn btn--white btn--animated">Learn more</a>
+                    <a href="#" className="btn btn--white btn--animated">{t('discover')}</a>
                 </div>
             </header>
 
             <main>
                 <section className="section-about">
                     <div className="u-center-text  u-margin-bottom-big">
-                        <h2 className="heading-secondary"> The company promise </h2>
+                        <h2 className="heading-secondary"> What We Do </h2>
                     </div>
 
                     <div className="row ">
                         <div className="col-1-of-2 ">
                             <h3 className="heading-tertiary u-margin-bottom-small">
-                                Trustworthy Transfers, Ensuring Safe Arrivals
+                                Copywriting & Translation
                             </h3>
                             <p className="paragraph">
-                                We started our business to cover a need in the market for an honest, innovative and dependable
-                                service provider, we have been fulfilling those needs ever since. Our reputation is paramount to
-                                us and we stop at nothing to prove that.
+                                Whether you need classical written Arabic, localized spoken dialects, or seamless English content, we craft words that resonate
                             </p>
                             <h3 className="heading-tertiary u-margin-bottom-small">
-                                Delivering Confidence, Every Mile
+                                Lightning-Fast Delivery
                             </h3>
                             <p className="paragraph">
-                                At FANNOUN, our top priority is ensuring the safe and efficient transportation of fuel and goods
-                                for our valued clients. With a steadfast commitment to quality and an unwavering dedication to
-                                safety, we navigate the complexities of logistics to provide seamless connections between
-                                refineries, stations, harbors, and sellers. Our experienced team, rigorous safety standards, and
-                                state-of-the-art fleet work together to guarantee the utmost reliability and performance,
-                                empowering businesses to thrive while giving them peace of mind.
+                                Need something under 500 words? We’ve got you covered. Quick next-day delivery is just a request away.
                             </p>
-                            <a href="#" className="btn-text">Learn more &rarr;</a>
+                            <h3 className="heading-tertiary u-margin-bottom-small">
+                                Global Media Monitoring
+                            </h3>
+                            <p className="paragraph">
+                                With a team of skilled monitors across various countries, we help you stay on top of social trends and media insights in English, Spanish, French, Arabic, Mandarin, and more
+                            </p>
+                            {/* <a href="#" className="btn-text">Learn more &rarr;</a> */}
                         </div>
                         <div className="col-1-of-2">
                             <div className="composition">
@@ -143,121 +137,6 @@ const TestPage = () => {
                     </div>
                 </section>
 
-                <section className="section-corporations">
-                    <div className="u-center-text  u-margin-bottom-big">
-                        <h2 className="heading-secondary"> Our corporations </h2>
-                    </div>
-
-                    <div className="row">
-                        <div className="col-1-of-3">
-                            <div className="card">
-                                <div className="card__side card__side--front">
-                                    <div className="card__picture card__picture--1">
-                                        &nbsp;
-                                    </div>
-                                    <h4 className="card__heading">
-                                        <span className="card__heading-span card__heading-span--1">
-                                            RAMZ TRANSPORTING CO.
-                                        </span>
-                                    </h4>
-                                    <div className="card__details">
-                                        <ul>
-                                            <li> Transporting companies</li>
-                                            <li> Transporting companies</li>
-                                            <li> Transporting companies</li>
-                                            <li> Transporting companies</li>
-                                            <li> Transporting companies</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div className="card__side card__side--back card__side--back-1">
-                                    <div className="card__cta">
-                                        <div className="card__info-box">
-                                            <Image width={0} height={0} src={Placeholder} className="card__logo-Box"
-                                                alt="Company Logo" />
-                                            <p className="card__price-only">&nbsp;</p>
-                                            <p className="card__price-value">&nbsp;</p>
-                                        </div>
-                                        <a href="#popup" className="btn btn--white">Learn more</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-1-of-3">
-                            <div className="card">
-                                <div className="card__side card__side--front">
-                                    <div className="card__picture card__picture--2">
-                                        &nbsp;
-                                    </div>
-                                    <h4 className="card__heading">
-                                        <span className="card__heading-span card__heading-span--2">
-                                            FANNOUN Tires CO.
-                                        </span>
-                                    </h4>
-                                    <div className="card__details">
-                                        <ul>
-                                            <li> Tires companies</li>
-                                            <li> Tires companies</li>
-                                            <li> Tires companies</li>
-                                            <li> Tires companies</li>
-                                            <li> Tires companies</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div className="card__side card__side--back card__side--back-2">
-                                    <div className="card__cta">
-                                        <Image width={0} height={0} src={Placeholder} className="card__logo-Box"
-                                            alt="Company Logo" />
-                                        <div className="card__info-box">
-                                            <p className="card__price-only">&nbsp;</p>
-                                            <p className="card__price-value">&nbsp;</p>
-                                        </div>
-                                        <a href="#popup" className="btn btn--white">Learn more</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-1-of-3">
-                            <div className="card">
-                                <div className="card__side card__side--front">
-                                    <div className="card__picture card__picture--3">
-                                        &nbsp;
-                                    </div>
-                                    <h4 className="card__heading">
-                                        <span className="card__heading-span card__heading-span--3">
-                                            &nbsp; VOLT Delivery &nbsp; Co.
-                                        </span>
-                                    </h4>
-                                    <div className="card__details">
-                                        <ul>
-                                            <li>Delivery companies</li>
-                                            <li>Delivery companies</li>
-                                            <li>Delivery companies</li>
-                                            <li>Delivery companies</li>
-                                            <li>Delivery companies</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div className="card__side card__side--back card__side--back-3">
-                                    <div className="card__cta">
-                                        <div className="card__info-box">
-                                            <Image width={0} height={0} src={Placeholder} className="card__logo-Box"
-                                                alt="Company Logo" />
-                                            <p className="card__price-only">&nbsp;</p>
-                                            <p className="card__price-value">&nbsp;</p>
-                                        </div>
-                                        <a href="#popup" className="btn btn--white">Learn more</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div className="u-center-text  u-margin-top-huge">
-                        <a href="#" className="btn btn--orange">View All Companies</a>
-                    </div>
-                </section>
 
                 <section className="section-managers">
                     <div className="u-center-text  u-margin-bottom-big">
@@ -268,13 +147,15 @@ const TestPage = () => {
 
                     <div className="row">
                         <div className="story">
-                            <figure className="story__shape">
-                                <Image width={0} height={0} src={Placeholder} className="story__img"
-                                    alt="founder" />
-                                <figcaption className="story__caption">
+                            <figure className="story__shape relative">
+                                <Image src={Placeholder} alt="founder" width={600} height={400} className="story__img transition-transform duration-300 hover:scale-105" />
+                                <div className="absolute inset-0 bg-black opacity-50 pointer-events-none"></div>
+                                <figcaption className="story__caption relative z-10">
                                     Mohammad Yousri Fannoun
                                 </figcaption>
                             </figure>
+
+
                             <div className="story__text">
                                 <h3 className="heading-tertiary u-margin-bottom-small"> Founder of the company</h3>
                                 <p>
@@ -290,6 +171,9 @@ const TestPage = () => {
                             <figure className="story__shape">
                                 <Image width={0} height={0} src={Placeholder} className="story__img"
                                     alt="founder" />
+                                <figcaption className="story__caption">
+                                    Mohammad Yousri Fannoun
+                                </figcaption>
                             </figure>
                             <div className="story__text">
                                 <h3 className="heading-tertiary u-margin-bottom-small"> Fannoun Tires Manager</h3>

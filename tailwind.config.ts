@@ -23,10 +23,13 @@ export default {
         laptopL: '1440px', // Large laptops/desktops
       },
       colors: {
-        primary: "#962547",
+        primary: "#02AFF4",
         secondary: "#FFF2F1",
-        black: "#151313",
+        black: "#000000",
         white: "#ffffff",
+        gray: {
+          text: "#777",
+        },
         background: {
           default: "#FFF2F1",
           men: "#f5f5f5",
@@ -163,6 +166,14 @@ export default {
         'custom-32': '32px',
         'custom-40': '40px',
         'custom-44': '44px',
+      },
+      backgroundImage: {
+        "gradient-image-one":
+          "linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8)), url('/assets/images/Uktob-Logo.jpg')",
+        "gradient-image-two":
+          "linear-gradient(to right bottom,rgba(170, 45, 41, 0.8),rgba(36, 32, 33, 0.8)),url('../assets/images/Uktob-Logo.jpg')",
+        "gradient-image-three":
+          "linear-gradient(to right bottom, #010648 ,#00B0F0),url('../assets/images/Uktob-Logo.jpg')",
       },
     },
     keyframes: {

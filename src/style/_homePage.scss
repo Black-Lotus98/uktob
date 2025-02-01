@@ -121,24 +121,18 @@ body {
   color: #fff;
   text-transform: uppercase;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   margin-bottom: 4rem;
 }
 .heading-primary--main {
-  display: block;
-  font-size: 10rem;
-  font-weight: 70rem;
-  letter-spacing: 4rem;
   -webkit-animation: moveInLeft 2s ease-out;
-          animation: moveInLeft 2s ease-out;
+  animation: moveInLeft 2s ease-out;
+  @apply block text-[10rem] font-[70rem] tracking-[4rem] rtl:tracking-normal rtl:text-[15rem];
 }
 .heading-primary--sub {
-  display: block;
-  font-size: 3rem;
-  font-weight: 700;
-  letter-spacing: 1.74rem;
   -webkit-animation: moveInRight 2s ease-out;
-          animation: moveInRight 2s ease-out;
+  animation: moveInRight 2s ease-out;
+  @apply block text-[3rem] font-custom-500 tracking-[.5rem] capitalize rtl:tracking-normal rtl:text-[5rem];
 }
 
 .heading-secondary {
@@ -202,7 +196,8 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.btn:link, .btn:visited {
+.btn:link,
+.btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -225,20 +220,16 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
 }
 .btn--white {
-  background-color: #fff;
-  color: #777;
+  @apply bg-white text-gray-text;
 }
 .btn--white::after {
-  background-color: #fff;
-  color: #777;
+  @apply bg-white text-gray-text;
 }
-.btn--orange {
-  background-color: #fa9c05;
-  color: #fff;
+.btn--primary {
+  @apply bg-primary text-white;
 }
-.btn--orange::after {
-  background-color: #fa9c05;
-  color: #777;
+.btn--primary::after {
+  @apply bg-primary text-white;
 }
 .btn::after {
   content: "";
@@ -254,177 +245,23 @@ body {
 }
 .btn--animated {
   -webkit-animation: moveInBottom 1s ease-out 0.75s;
-          animation: moveInBottom 1s ease-out 0.75s;
+  animation: moveInBottom 1s ease-out 0.75s;
   -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
 }
 
-.btn-text:link, .btn-text:visited {
-  font-size: 1.6rem;
-  color: #fa9c05;
-  display: inline-block;
-  text-decoration: none;
-  border-bottom: 1px solid #fa9c05;
-  padding: 3px;
-  transition: all 0.2s;
-  font-weight: 600;
-}
-.btn-text:hover {
-  background-color: #fa9c05;
-  color: #fff;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
-}
-.btn-text:hover::after {
-  transform: scale(1.4, 1.6);
-  opacity: 0;
-}
-.btn-text:active {
-  transform: translateY(-2px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+.btn-text:link,
+.btn-text:visited {
+  @apply text-primary text-[1.6rem] inline-block border-b border-primary border-solid 
+  p-2 transition-all rounded-md duration-200 font-custom-600 no-underline hover:text-white
+  hover:bg-primary hover:shadow-[0_1rem_2rem_rgba(0,0,0,0.15)] hover:translate-y-[-2px]
+  active:shadow-[0_0.5rem_1rem_rgba(0,0,0,0.5)] active:translate-y-[-2px]
+  hover:after:scale-x-[1.4] hover:after:scale-y-[1.6] hover:after:opacity-0;
 }
 
 .btn-menu {
-  color: #fff;
-  display: inline-block;
-  transition: all 0.2s;
-  position: relative;
-  font-weight: 600;
-}
-
-.card {
-  perspective: 150rem;
-  -moz-perspective: 150rem;
-  position: relative;
-  height: 52rem;
-}
-.card__side {
-  height: 52rem;
-  transition: all 1s ease-out;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  border-radius: 3px;
-  overflow: hidden;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-}
-.card__side--front {
-  background-color: white;
-}
-.card__side--back {
-  background-color: green;
-  transform: rotateY(180deg);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  border-radius: 3px;
-  overflow: hidden;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-}
-.card__side--back-1 {
-  background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
-}
-.card__side--back-2 {
-  background-image: linear-gradient(to right bottom, #AA2D29, #242021);
-}
-.card__side--back-3 {
-  background-image: linear-gradient(to right bottom, #010648, #18D000);
-}
-.card:hover .card__side--front {
-  transform: rotateY(-180deg);
-}
-.card:hover .card__side--back {
-  transform: rotateY(0deg);
-}
-.card__picture {
-  background-size: cover;
-  height: 23rem;
-  background-blend-mode: screen;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-}
-.card__picture--1 {
-  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8)), url('../assets/images/Uktob-Logo.jpg');
-}
-.card__picture--2 {
-  background-image: linear-gradient(to right bottom, rgba(170, 45, 41, 0.8), rgba(36, 32, 33, 0.8)), url('../assets/images/Uktob-Logo.jpg');
-}
-.card__picture--3 {
-  background-image: linear-gradient(to right bottom, rgba(1, 6, 72, 0.8), rgba(24, 208, 0, 0.8)), url('../assets/images/Uktob-Logo.jpg');
-}
-.card__heading {
-  font-size: 2.5rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-align: right;
-  color: #fff;
-  position: absolute;
-  top: 12rem;
-  right: 2rem;
-  width: 75%;
-}
-.card__heading-span {
-  padding: 1rem 1.5rem;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-}
-.card__heading-span--1 {
-  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85));
-}
-.card__heading-span--2 {
-  background-image: linear-gradient(to right bottom, rgba(170, 45, 41, 0.85), rgba(36, 32, 33, 0.85));
-}
-.card__heading-span--3 {
-  background-image: linear-gradient(to right bottom, rgba(1, 6, 72, 0.85), rgba(24, 208, 0, 0.85));
-}
-.card__details {
-  padding: 3rem;
-}
-.card__details ul {
-  list-style: none;
-  width: 85%;
-  margin: 0 auto;
-}
-.card__details ul li {
-  text-align: center;
-  font-size: 1.5rem;
-  padding: 1rem;
-}
-.card__details ul li:not(:last-child) {
-  border-bottom: 1px solid #dee2e6;
-}
-.card__cta {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-  text-align: center;
-}
-.card__info-box {
-  text-align: center;
-  color: #fff;
-  margin-bottom: 8rem;
-}
-.card__logo-Box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -90%);
-  width: 25rem;
-  height: 25rem;
-}
-.card__price-only {
-  font-size: 1.4rem;
-  text-transform: uppercase;
-}
-.card__price-value {
-  font-size: 6rem;
-  font-weight: 100;
+  @apply text-white inline-block transition-all duration-200 font-custom-600 no-underline
+  relative;
 }
 
 .composition {
@@ -451,7 +288,7 @@ body {
   top: 6.25rem;
 }
 .composition__photo:hover {
-  outline: 1.5rem solid #00B0F0;
+  outline: 1.5rem solid #00b0f0;
   transform: scale(1.1) translateY(-0.5rem);
   box-shadow: 0 12.5rem 2.5rem rgba(0, 0, 0, 0.5);
   z-index: 20;
@@ -473,7 +310,7 @@ body {
   font-size: 6rem;
   margin-bottom: 0.5rem;
   display: inline-block;
-  background-image: linear-gradient(to right, #CC9A06, #997404);
+  background-image: linear-gradient(to right, #cc9a06, #997404);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -485,7 +322,7 @@ body {
   width: 75%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  @apply bg-white;
   border-radius: 3px;
   padding: 6rem;
   padding-left: 9rem;
@@ -509,7 +346,7 @@ body {
   height: 100%;
   width: 100%;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   transition: all 0.5s;
 }
 .story__text {
@@ -527,7 +364,7 @@ body {
   opacity: 0;
   transition: all 0.5s;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .story:hover .story__caption {
   opacity: 1;
@@ -557,20 +394,20 @@ body {
   display: table;
   clear: both;
 }
-.row [class^=col-] {
+.row [class^="col-"] {
   float: left;
 }
-.row [class^=col-]:not(:last-child) {
+.row [class^="col-"]:not(:last-child) {
   margin-right: 6rem;
 }
 @media only screen and (max-width: 56.25em) {
-  .row [class^=col-]:not(:last-child) {
+  .row [class^="col-"]:not(:last-child) {
     margin-right: 0;
     margin-bottom: 6rem;
   }
 }
 @media only screen and (max-width: 56.25em) {
-  .row [class^=col-] {
+  .row [class^="col-"] {
     width: 100% !important;
   }
 }
@@ -598,7 +435,12 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(33, 37, 41, 0.8)), url('../assets/images/backgrounds/image.png');
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.8),
+      rgba(33, 37, 41, 0.8)
+    ),
+    url("../assets/images/backgrounds/image.png");
   background-size: cover;
   background-position: bottom;
   position: relative;
@@ -639,7 +481,12 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(33, 37, 41, 0.8)), url('../assets/images/Uktob-Logo.jpg');
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.8),
+      rgba(33, 37, 41, 0.8)
+    ),
+    url("../assets/images/Uktob-Logo.jpg");
   background-size: cover;
   margin-top: -10rem;
   transform: skewY(-7deg);
