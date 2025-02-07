@@ -2,6 +2,9 @@
 import Image from 'next/image'
 import React from 'react'
 import Placeholder from '../../assets/images/Uktob-Logo.jpg'
+import image1 from '../../assets/images/royalty-free/1.jpeg'
+import image2 from '../../assets/images/royalty-free/2.jpeg'
+import image3 from '../../assets/images/royalty-free/3.jpeg'
 import Logo from '@/components/common/Logo'
 import { useTranslation } from 'react-i18next'
 
@@ -68,11 +71,11 @@ const TestPage = () => {
                         </div>
                         <div className="col-1-of-2">
                             <div className="composition">
-                                <Image width={0} height={0} src={Placeholder} alt="image1"
+                                <Image width={0} height={0} src={image1} alt="image1"
                                     className="composition__photo composition__photo--p1" />
-                                <Image width={0} height={0} src={Placeholder} alt="image2"
+                                <Image width={0} height={0} src={image2} alt="image2"
                                     className="composition__photo composition__photo--p2" />
-                                <Image width={0} height={0} src={Placeholder} alt="image3"
+                                <Image width={0} height={0} src={image3} alt="image3"
                                     className="composition__photo composition__photo--p3" />
                             </div>
                         </div>
@@ -125,57 +128,91 @@ const TestPage = () => {
                 </section>
 
 
-                <section className="section-managers">
+                <section className="section-testomonials">
                     <div className="u-center-text  u-margin-bottom-big">
                         <h2 className="heading-secondary">
-                            Our Managers and founders
+                            Testomonials
                         </h2>
                     </div>
 
                     <div className="row">
                         <div className="story">
-                            <figure className="story__shape relative">
+                            {/* <figure className="story__shape relative">
                                 <Image src={Placeholder} alt="founder" width={600} height={400} className="story__img transition-transform duration-300 hover:scale-105" />
                                 <div className="absolute inset-0 bg-black opacity-50 pointer-events-none"></div>
                                 <figcaption className="story__caption relative z-10">
-                                    Mohammad Yousri Fannoun
+
                                 </figcaption>
-                            </figure>
+                            </figure> */}
 
 
                             <div className="story__text">
-                                <h3 className="heading-tertiary u-margin-bottom-small"> Founder of the company</h3>
+                                <h3 className="heading-tertiary u-margin-bottom-small"> Rayan Hasan - Managing director, Head of Data Analytics, Research & Insights, Finsbury Global</h3>
                                 <p>
-                                    Muhammad Yousri Fannoun moved to Jordan in 1967 and followed his father's footsteps by
-                                    purchasing his own trucks. By 1975 he had a number of trucks with which he established a
-                                    private transport company named Fannoun and Taslaq co.
+                                    “We’ve been working with the Uktob team for around 2 years for our social media monitoring. Their ability to track and analyze content in 
+                                    multiple languages has given us invaluable insights into our audience's preferences and behavior. The team is efficient, responsive, and understands 
+                                    our needs. Uktob has become an essential partner in our digital strategy, and we couldn't be happier with their service!"
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div className="row">
                         <div className="story">
-                            <figure className="story__shape">
+                            {/* <figure className="story__shape">
                                 <Image width={0} height={0} src={Placeholder} className="story__img"
                                     alt="founder" />
                                 <figcaption className="story__caption">
-                                    Mohammad Yousri Fannoun
                                 </figcaption>
-                            </figure>
+                            </figure> */}
                             <div className="story__text">
-                                <h3 className="heading-tertiary u-margin-bottom-small"> Fannoun Tires Manager</h3>
+                                <h3 className="heading-tertiary u-margin-bottom-small">Natacha Karkour - Senior Social Media Manager, Netizency</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sed dolorum architecto
-                                    quisquam praesentium ea mollitia ipsa repellendus vero, facere incidunt, nihil corrupti
-                                    reprehenderit totam consequatur iusto, ipsam commodi placeat!
+                                    The team at Uktob is incredibly fast, thoughtful, and proactive. Their speed and attention to detail are unmatched, which is very appreciated in the 
+                                    fast-paced world of social media. They don’t just translate; they offer valuable insights and suggestions, especially when it comes to tricky cultural 
+                                    nuances like Saudi-specific phrasing. Plus, the founder is an absolute gem to work with—kind, reliable, and always ready to help!
 
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div className="row u-center-text ">
-                        <a href="" className="btn-text">View all managers &rarr;</a>
+                    <div className="row">
+                        <div className="story">
+                            {/* <figure className="story__shape">
+                                <Image width={0} height={0} src={Placeholder} className="story__img"
+                                    alt="founder" />
+                                <figcaption className="story__caption">
+                                </figcaption>
+                            </figure> */}
+                            <div className="story__text">
+                                <h3 className="heading-tertiary u-margin-bottom-small">Ghadah, Arabic Copywriter</h3>
+                                <p>
+                                على مدار تسع سنوات من العمل مع اكتب كمترجمة وكاتبة محتوى ومدققة
+                                لغوية، كانت كل لحظة مليئة بالإبداع والإنجاز. في هذه البيئة الملهمة والداعمة، تحوّلت أفكاري إلى نجاحات ملموسة، ومسيرتي في اكتب إلى قصة فخر واعتزاز.
+                                </p>
+                            </div>
+                        </div>
                     </div>
+                    <div className="row">
+                        <div className="story">
+                            {/* <figure className="story__shape">
+                                <Image width={0} height={0} src={Placeholder} className="story__img"
+                                    alt="founder" />
+                                <figcaption className="story__caption">
+                                </figcaption>
+                            </figure> */}
+                            <div className="story__text">
+                                <h3 className="heading-tertiary u-margin-bottom-small">Elizabeth, English Copywriter and Editor</h3>
+                                <p>
+                                    I have worked for Uktob in a freelance capacity for around a decade, and cannot praise it highly enough. They are consummate professionals who are incredibly 
+                                    committed to their work, and demand the highest standards from both the organization and those who work with it. I have always found the Uktob team’s passion, 
+                                    strong work ethic and dedication inspiring, and I feel honored to work with them as often as I do.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    {/* <div className="row u-center-text ">
+                        <a href="" className="btn-text">View all managers &rarr;</a>
+                    </div> */}
 
                 </section>
                 <section className="py-5">

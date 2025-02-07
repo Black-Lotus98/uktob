@@ -466,7 +466,7 @@ body {
 }
 
 .header {
-  height: 95vh;
+  height: 75vh;
   background-image: linear-gradient(
       to right bottom,
       rgba(0, 0, 0, 0.8),
@@ -476,8 +476,8 @@ body {
   background-size: cover;
   background-position: bottom;
   position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
 }
 .header__logo-box {
   position: absolute;
@@ -539,7 +539,7 @@ body {
   margin-top: -10rem;
 }
 
-.section-managers {
+.section-testomonials {
   padding: 15rem 0;
   background-color: #e9ecef;
 }
