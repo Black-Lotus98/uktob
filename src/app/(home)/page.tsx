@@ -5,11 +5,14 @@ import image1 from '../../assets/images/royalty-free/1.jpeg'
 import image2 from '../../assets/images/royalty-free/2.jpeg'
 import image3 from '../../assets/images/royalty-free/3.jpeg'
 import image4 from '../../assets/images/backgrounds/office.png'
+import BookIcon from '../../assets/images/backgrounds/book_icon.png'
 import Logo from '@/components/common/Logo'
 import { useTranslation } from 'react-i18next'
 import CustomH2 from '@/components/ui/CustomH2'
 import CustomFeatureBox from '@/components/common/CustomFeatureBox'
 import CustomFeatureContainer from '@/components/common/CustomFeatureBox/CustomFeatureContainer'
+import AnimatedTitle from '@/components/ui/AnimatedTitle'
+import CustomSection from '@/components/common/CustomSection'
 
 const HomePage = () => {
 
@@ -36,46 +39,50 @@ const HomePage = () => {
                     </a>
                 </div> */}
         <div className="header__text-box">
-          <h1 className="heading-primary">
-            <span className="heading-primary--main ">{t("uktob")}</span>
-            <span className="heading-primary--sub ">{t('sub_heading')}</span>
+          <h1 className="heading-primary flex flex-col gap-4">
+            <span className="heading-primary--main rtl:font-gulzar rtl:text-[9.375rem]">{t("uktob")}</span>
+            <span className="heading-primary--sub text-custom-45 rtl:font-gulzar tracking-widest rtl:tracking-normal rtl:text-custom-90">{t("welcome_title")}</span>
           </h1>
           <a href="#" className="btn btn--white btn--animated">{t('discover')}</a>
         </div>
       </header>
 
       <main>
-        <section className="flex flex-col bg-[#e9ecef] pt-[15rem] pb-[25rem] px-44 mt-[-20vh] h-fit">
+        <div className="my-10">
+          <AnimatedTitle sectionOne={t('Your go-to partner')} image={BookIcon} sectionTwo={t('for authentic, localized content and global media monitoring')} />
+        </div>
+
+        <section className="flex flex-col bg-[#e9ecef] pt-[15rem] pb-[25rem] px-44  h-fit mb-0">
           <div className="u-center-text  u-margin-bottom-big">
-            <h2 className="heading-secondary"> What We Do </h2>
+            <h2 className="heading-secondary rtl:tracking-normal"> {t('what_we_do')} </h2>
           </div>
           <div className="flex laptopS:flex-row flex-col ">
             <div className="flex flex-col laptopS:mx-44 b-[35rem] laptopS:mb-0">
               <h3 className="heading-tertiary u-margin-bottom-small">
-                Copywriting & Translation
+                {t('Copywriting & Translation')}
               </h3>
               <p className="paragraph">
-                Whether you need classical written Arabic, localized spoken dialects, or seamless English content, we craft words that resonate
+                {t('copyright_translation_description')}
               </p>
               <h3 className="heading-tertiary u-margin-bottom-small">
-                Lightning-Fast Delivery
+                {t('Lightning-Fast Delivery')}
               </h3>
               <p className="paragraph">
-                Need something under 500 words? We’ve got you covered. Quick next-day delivery is just a request away.
+                {t('lightning_fast_delivery_description')}
+
               </p>
               <h3 className="heading-tertiary u-margin-bottom-small">
-                Global Media Monitoring
+                {t("Global Media Monitoring")}
               </h3>
               <p className="paragraph">
-                With a team of skilled monitors across various countries, we help you stay on top of social trends and media insights in English, Spanish, French, Arabic, Mandarin, and more
+                {t('global_media_monitoring_description')}
               </p>
             </div>
 
             <div className="w-full relative ">
               <div className="w-[35rem] h-[35rem] absolute laptopS:-top-28 top-0  composition__photo z-50">
                 <Image width={400} height={400} src={image1} alt="image1"
-                  className="object-cover w-full h-full object-center 
-                  " />
+                  className="object-cover w-full h-full object-center" />
               </div>
               <div className="w-[35rem] h-[35rem] absolute laptopS:-bottom-28 laptopS:-left-24 composition__photo">
                 <Image width={400} height={400} src={image2} alt="image2"
@@ -89,24 +96,23 @@ const HomePage = () => {
           </div>
 
         </section >
-
-        <section className="section-features">
-          <div className="flex flex-col items-center w-full gap-6">
-            <CustomH2 className=' text-white '>Why Choose Uktob?</CustomH2>
+        <section className="w-full h-[70rem] bg-gradient-image-four bg-cover flex flex-col justify-center items-center ">
+          <div className="flex flex-col items-center gap-8">
+            <CustomH2 className=' text-white '>{t("why_choose_uktob")}</CustomH2>
 
             <CustomFeatureContainer>
 
               <CustomFeatureBox>
-                <span className=''>We speak your language (literally and culturally).</span>
+                <span className=''>{t("choice_1")}</span>
               </CustomFeatureBox>
 
 
               <CustomFeatureBox>
-                <span className=''>Our personalized service ensures your content feels tailored, not templated.</span>
+                <span className=''>{t("choice_2")}</span>
               </CustomFeatureBox>
 
               <CustomFeatureBox>
-                <span className=''>We deliver on time, every time, because your deadlines matter.</span>
+                <span className=''>{t("choice_3")}</span>
               </CustomFeatureBox>
             </CustomFeatureContainer>
           </div>
@@ -114,7 +120,7 @@ const HomePage = () => {
         </section>
 
 
-        <section className="section-testomonials mt-[-15rem]">
+        <section className="section-testomonials mt-[0rem]">
           <div className="u-center-text  u-margin-bottom-big">
             <h2 className="heading-secondary">
               Testomonials
@@ -202,8 +208,10 @@ const HomePage = () => {
 
         </section>
         <section className="py-5">
-          <div className="u-center-text  u-margin-bottom-big">
-            <h2 className="heading-fourthary"> Got a project? Need a quick turnaround? Drop us a message. We’d love to help. </h2>
+          <div className="u-center-text  u-margin-bottom-big flex flex-col">
+            <h2 className="heading-fourthary capitalize"> {t("contact_us_title")} </h2>
+            <h2 className="heading-fourthary capitalize"> {t("we’d love to help")} </h2>
+
           </div>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 grid-cols-1">

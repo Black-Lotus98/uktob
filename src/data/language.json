@@ -1,15 +1,79 @@
 {
     "uktob": {
         "en": "Uktob",
-        "ar": "أكتب"
+        "ar": "أ كتب"
     },
-    "sub_heading": {
-        "en": "Your go-to partner for authentic, localized content and global media monitoring.",
-        "ar": " الشريك الافتقادي للمحتوى الصحيح والمحتوى المحلي والوسائط العالمية"
+    "welcome_title": {
+        "en": "Welcome to Uktob!",
+        "ar": "مرحبا بك في اكتب"
+    },
+    "Your go-to partner": {
+        "en": "Your go-to partner",
+        "ar": " شريككم الموثوق لصناعة محتوى مؤثر وخدمات متابعة دقيقة للمحتوى عبر مختلف المنصات الإعلامية "
+    },
+    "for authentic, localized content and global media monitoring": {
+        "en": "for authentic, localized content and global media monitoring.",
+        "ar": " .مع تحليلات تساعدكم على فهم ما يُقال عنكم وعن منافسيكم لاتخاذ قرارات مدروسة "
+    },
+    "what_we_do": {
+        "en": "What we do",
+        "ar": "ما الذي يجعل اكتب وجهتكم المثالية؟"
+    },
+    "We specialize in": {
+        "en": "We specialize in",
+        "ar": null
+    },
+    "Copywriting & Translation": {
+        "en": "Copywriting & Translation",
+        "ar": "حقوق النشر وترجمة"
+    },
+    "copyright_translation_description": {
+        "en": "Whether you need classical written Arabic, localized spoken dialects, or seamless English content, we craft words that resonate.",
+        "ar": "سواء كنتم بحاجة إلى نصوص عربية فصيحة تبهر الجميع، لهجات محلية تتحدث بلسان جمهوركم، أو محتوى إنجليزي سلس ومُتقن، نحن نكتب الكلمات التي تصنع الفرق."
+    },
+    "Lightning-Fast Delivery": {
+        "en": "Lightning-Fast Delivery",
+        "ar": "تسليم أسرع مما تتخيلون"
+    },
+    "lightning_fast_delivery_description": {
+        "en": "Need something under 500 words? We’ve got you covered. Quick next-day delivery is just a request away",
+        "ar": "تحتاجون إلى محتوى أقل من 500 كلمة؟ نحن جاهزون لتقديمه خلال 24 ساعة فقط! طلبكم اليوم، بين يديكم غدًا."
+    },
+    "Global Media Monitoring": {
+        "en": "Global Media Monitoring",
+        "ar": "مراقبة وسائل الإعلام العالمية ببصيرة حادة"
+    },
+    "global_media_monitoring_description": {
+        "en": "With a team of skilled monitors across various countries, we help you stay on top of social trends and media insights in English, Spanish, French, Arabic, Mandarin, and more",
+        "ar": "تحتاجون إلى محتوى أقل من 500 كلمة؟ نحن جاهزون لتقديمه خلال 24 ساعة فقط! طلبكم اليوم، بين يديكم غدًا."
+    },
+    "why_choose_uktob": {
+        "en": "Why choose us?",
+        "ar": "لماذا نحن خياركم الأفضل؟"
+    },
+    "choice_1": {
+        "en": "We speak your language (literally and culturally).",
+        "ar": "نفهم لغتكم وننقل ثقافتكم في كل كلمة نكتبها."
+    },
+    "choice_2": {
+        "en": "Our personalized service ensures your content feels tailored, not templated.",
+        "ar": "نُصمم محتوى خاص يُعبّر عنكم بتميز، لأننا نثق بأن قصتكم تستحق عرضًا استثنائيًا."
+    },
+    "choice_3": {
+        "en": "We deliver on time, every time, because your deadlines matter.",
+        "ar": "نلتزم بالمواعيد، كل مرة، لأن وقتكم هو أولوية لا جدال فيها."
+    },
+    "contact_us_title": {
+        "en": "Got a project? Need a quick turnaround? Drop us a message",
+        "ar": "هل لديكم فكرة مشروع أو طلب عاجل؟"
+    },
+    "we’d love to help": {
+        "en": "we’d love to help",
+        "ar": "نسعد لمساعدتكم"
     },
     "discover": {
         "en": "Discover",
-        "ar": "اكتشف المزيد" 
+        "ar": "اكتشف المزيد"
     },
     "menu": {
         "en": "Menu",

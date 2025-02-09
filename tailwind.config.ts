@@ -12,6 +12,8 @@ export default {
       fontFamily: {
         serif: ['Noto Serif Jp', 'serif'],
         sans: ['Poppins', 'sans-serif'],
+        gulzar: ['Gulzar', 'sans-serif'],
+        amiri: ['Amiri', 'sans-serif'],
       },
       screens: {
         mobileS: '375px', // Small mobile devices
@@ -174,6 +176,8 @@ export default {
           "linear-gradient(to right bottom,rgba(170, 45, 41, 0.8),rgba(36, 32, 33, 0.8)),url('../assets/images/Uktob-Logo.jpg')",
         "gradient-image-three":
           "linear-gradient(to right bottom, #010648 ,#00B0F0),url('../assets/images/Uktob-Logo.jpg')",
+        "gradient-image-four": 
+          "linear-gradient(to right bottom, rgba(0, 0, 0, 0.8),  rgba(33, 37, 41, 0.8)),url('../assets/images/backgrounds/book.jpg')",
       },
     },
     keyframes: {

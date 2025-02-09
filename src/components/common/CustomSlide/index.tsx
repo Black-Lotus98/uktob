@@ -4,7 +4,7 @@ import { cn } from '@/utilities/functions'
 
 const CustomSlide = ({ children, className, ...props }: SlideType) => {
     const containerClasses = cn(
-        "flex w-full",
+        "flex w-full px-2",
         className
     )
     return (
