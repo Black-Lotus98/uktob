@@ -90,5 +90,33 @@
     "users": {
         "en": "Users",
         "ar": "المستخدمين"
+    },
+    "testimonial-1": {
+        "en": "Rayan Hasan - Managing director, Head of Data Analytics, Research & Insights, Finsbury Global",
+        "ar": "ريان حسن - المدير الإداري، رئيس قسم تحليلات البيانات والأبحاث والرؤى في شركة Finsbury Global"
+    },
+    "testimonial-1-sub": {
+        "en": "“We’ve been working with the Uktob team for around 2 years for our social media monitoring. Their ability to track and analyze content in multiple languages has given us invaluable insights into our audiences preferences and behavior. The team is efficient, responsive, and understands our needs. Uktob has become an essential partner in our digital strategy, and we couldnt be happier with their service!",
+        "ar": "لقد عملنا مع فريق Uktob لمدة عامين تقريبًا لمراقبة وسائل التواصل الاجتماعي لدينا. لقد منحتنا قدرتهم على تتبع وتحليل المحتوى بلغات متعددة رؤى لا تقدر بثمن حول تفضيلات جمهورنا وسلوكه. الفريق فعال وسريع الاستجابة ويتفهم احتياجاتنا. لقد أصبح Uktob شريكًا أساسيًا في استراتيجيتنا الرقمية، ولا يمكننا أن نكون أكثر سعادة بخدمتهم!"
+    },
+    "testimonial-2": {
+        "en": "Natacha Karkour - Senior Social Media Manager, Netizency",
+        "ar": "ناتاشا كركور - مدير أول لوسائل التواصل الاجتماعي، Netizen"
+    },
+    "testimonial-2-sub": {
+        "en": "The team at Uktob is incredibly fast, thoughtful, and proactive. Their speed and attention to detail are unmatched, which is very appreciated in the fast-paced world of social media. They don’t just translate; they offer valuable insights and suggestions, especially when it comes to tricky cultural nuances like Saudi-specific phrasing. Plus, the founder is an absolute gem to work with—kind, reliable, and always ready to help!",
+        "ar": "فريق Uktob سريع ومدروس واستباقي بشكل لا يصدق. إن سرعتهم واهتمامهم بالتفاصيل لا مثيل لهما، وهو أمر يحظى بتقدير كبير في عالم وسائل التواصل الاجتماعي سريع الخطى. إنهم لا يترجمون فقط؛ فهي تقدم رؤى واقتراحات قيمة، خاصة عندما يتعلق الأمر بالفروق الثقافية الدقيقة مثل الصياغة الخاصة بالمملكة العربية السعودية. بالإضافة إلى ذلك، يعد المؤسس جوهرة مطلقة للعمل معه، فهو لطيف وموثوق ومستعد دائمًا للمساعدة!"
+    },
+    "testimonial-3": {
+        "en": "Ghadah, Arabic Copywriter",
+        "ar": "غادة، كاتبة عربية"
+    },
+    "testimonial-4": {
+        "en": "Elizabeth, English Copywriter and Editor",
+        "ar": "إليزابيث، كاتبة ومحررة إنجليزية"
+    },
+    "testimonial-4-sub": {
+        "en": "I have worked for Uktob in a freelance capacity for around a decade, and cannot praise it highly enough. They are consummate professionals who are incredibly committed to their work, and demand the highest standards from both the organization and those who work with it. I have always found the Uktob team’s passion, strong work ethic and dedication inspiring, and I feel honored to work with them as often as I do.",
+        "ar": "لقد عملت لدى Uktob كمستقل لمدة عشر سنوات تقريبًا، ولا أستطيع أن أشيد بها بما فيه الكفاية. إنهم محترفون بارعون وملتزمون بعملهم بشكل لا يصدق، ويطالبون بأعلى المعايير من كل من المنظمة وأولئك الذين يعملون معها. لقد وجدت دائمًا شغف فريق Uktob وأخلاقيات العمل القوية والتفاني ملهمًا، وأشعر بالفخر للعمل معهم بقدر ما أفعل ذلك."
     }
 }

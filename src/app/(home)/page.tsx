@@ -139,12 +139,8 @@ const HomePage = () => {
 
 
               <div className="story__text">
-                <h3 className="heading-tertiary u-margin-bottom-small"> Rayan Hasan - Managing director, Head of Data Analytics, Research & Insights, Finsbury Global</h3>
-                <p>
-                  “We’ve been working with the Uktob team for around 2 years for our social media monitoring. Their ability to track and analyze content in
-                  multiple languages has given us invaluable insights into our audiences preferences and behavior. The team is efficient, responsive, and understands
-                  our needs. Uktob has become an essential partner in our digital strategy, and we couldnt be happier with their service!
-                </p>
+                <h3 className="heading-tertiary u-margin-bottom-small">{t("testimonial-1")}</h3>
+                <p>{t("testimonial-1-sub")}</p>
               </div>
             </div>
           </div>
@@ -157,13 +153,8 @@ const HomePage = () => {
                                 </figcaption>
                             </figure> */}
               <div className="story__text">
-                <h3 className="heading-tertiary u-margin-bottom-small">Natacha Karkour - Senior Social Media Manager, Netizency</h3>
-                <p>
-                  The team at Uktob is incredibly fast, thoughtful, and proactive. Their speed and attention to detail are unmatched, which is very appreciated in the
-                  fast-paced world of social media. They don’t just translate; they offer valuable insights and suggestions, especially when it comes to tricky cultural
-                  nuances like Saudi-specific phrasing. Plus, the founder is an absolute gem to work with—kind, reliable, and always ready to help!
-
-                </p>
+                <h3 className="heading-tertiary u-margin-bottom-small">{t("testimonial-2")}</h3>
+                <p>{t("testimonial-2-sub")}</p>
               </div>
             </div>
           </div>
@@ -176,7 +167,7 @@ const HomePage = () => {
                                 </figcaption>
                             </figure> */}
               <div className="story__text">
-                <h3 className="heading-tertiary u-margin-bottom-small">Ghadah, Arabic Copywriter</h3>
+                <h3 className="heading-tertiary u-margin-bottom-small">{t("testimonial-3")}</h3>
                 <p>
                   على مدار تسع سنوات من العمل مع اكتب كمترجمة وكاتبة محتوى ومدققة
                   لغوية، كانت كل لحظة مليئة بالإبداع والإنجاز. في هذه البيئة الملهمة والداعمة، تحوّلت أفكاري إلى نجاحات ملموسة، ومسيرتي في اكتب إلى قصة فخر واعتزاز.
@@ -193,12 +184,8 @@ const HomePage = () => {
                                 </figcaption>
                             </figure> */}
               <div className="story__text">
-                <h3 className="heading-tertiary u-margin-bottom-small">Elizabeth, English Copywriter and Editor</h3>
-                <p>
-                  I have worked for Uktob in a freelance capacity for around a decade, and cannot praise it highly enough. They are consummate professionals who are incredibly
-                  committed to their work, and demand the highest standards from both the organization and those who work with it. I have always found the Uktob team’s passion,
-                  strong work ethic and dedication inspiring, and I feel honored to work with them as often as I do.
-                </p>
+                <h3 className="heading-tertiary u-margin-bottom-small">{t("testimonial-4")}</h3>
+                <p>{t("testimonial-4-sub")}</p>
               </div>
             </div>
           </div>
