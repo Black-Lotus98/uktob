@@ -118,5 +118,69 @@
     "testimonial-4-sub": {
         "en": "I have worked for Uktob in a freelance capacity for around a decade, and cannot praise it highly enough. They are consummate professionals who are incredibly committed to their work, and demand the highest standards from both the organization and those who work with it. I have always found the Uktob team’s passion, strong work ethic and dedication inspiring, and I feel honored to work with them as often as I do.",
         "ar": "لقد عملت لدى Uktob كمستقل لمدة عشر سنوات تقريبًا، ولا أستطيع أن أشيد بها بما فيه الكفاية. إنهم محترفون بارعون وملتزمون بعملهم بشكل لا يصدق، ويطالبون بأعلى المعايير من كل من المنظمة وأولئك الذين يعملون معها. لقد وجدت دائمًا شغف فريق Uktob وأخلاقيات العمل القوية والتفاني ملهمًا، وأشعر بالفخر للعمل معهم بقدر ما أفعل ذلك."
+    },
+    "contactus-header-1": {
+        "en": "Contact us",
+        "ar": "اتصل بنا"
+    },
+    "contactus-header-2": {
+        "en": "Send Us A Message",
+        "ar": "أرسل لنا رسالة"
+    },
+    "contactus-name": {
+        "en": "Name",
+        "ar": "اسم"
+    },
+    "contactus-email": {
+        "en": "Email",
+        "ar": "بريد إلكتروني"
+    },
+    "contactus-message": {
+        "en": "Message",
+        "ar": "رسالة"
+    },
+    "contactus-method": {
+        "en": "Preferred method  of communication",
+        "ar": "طريقة التواصل المفضلة"
+    },
+    "contactus-phone-item": {
+        "en": "Phone",
+        "ar": "هاتف"
+    },
+    "contactus-email-item": {
+        "en": "Email",
+        "ar": "بريد إلكتروني"
+    },
+    "contactus-send": {
+        "en": "Send",
+        "ar": "يرسل"
+    },
+    "footer-about": {
+        "en": "About",
+        "ar": "عن"
+    },
+    "footer-blog": {
+        "en": "Blog",
+        "ar": "مدونة"
+    },
+    "footer-team": {
+        "en": "Team",
+        "ar": "فريق"
+    }, 
+    "footer-pricing": {
+        "en": "Pricing",
+        "ar": "التسعير"
+    },    
+    "footer-contact": {
+        "en": "Contact",
+        "ar": "اتصال"
+    },
+    "footer-terms": {
+        "en": "Terms",
+        "ar": "شروط"
+    },
+    "footer-copyright": {
+        "en": "© Some Year Uktob, Inc. All rights reserved.",
+        "ar": "© Some Year Uktob, Inc. جميع الحقوق محفوظة."
     }
 }
